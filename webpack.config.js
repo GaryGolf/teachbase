@@ -60,6 +60,7 @@ module.exports = {
         })
       },
       // static assets 
+      { test: /\.json$/, use: 'json-loader' },
       { test: /\.html$/, use: 'html-loader' },
       { test: /\.png$/, use: 'url-loader?limit=10000' },
       { test: /\.jpg$/, use: 'file-loader' }

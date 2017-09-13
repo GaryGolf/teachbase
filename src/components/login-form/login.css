@@ -4,8 +4,11 @@
   justify-content: space-between;
   margin: 15px 0 0 10px;
 }
+.form-group label {
+  width: 25%;
+}
 .form-group input {
-  width: 100%;
+  width: 75%;
   margin: 0 20px;
   box-sizing: border-box;
 }

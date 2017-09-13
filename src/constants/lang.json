@@ -1,0 +1,18 @@
+{
+  "eng":{
+    "login":{
+      "title": "Please login",
+      "login": "login",
+      "password": "password",
+      "submit": "Submit"
+    }
+  },
+  "rus":{
+    "login":{
+      "title": "Авторизируйтесь",
+      "login": "имя",
+      "password": "пароль",
+      "submit": "Отослать"
+    }
+  }
+}
