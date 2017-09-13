@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-self: stretch;
+  width: 400px;
+  margin: 100px auto;
+  border: 1px solid silver;
+  border-radius: 5px;
+  padding: 12px;
+}
