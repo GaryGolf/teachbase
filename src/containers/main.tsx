@@ -15,6 +15,9 @@ interface Props {
 interface State {
   lang: string
 }
+
+const sleep = async ms => new Promise(async resolve=>await setTimeout(()=>resolve('Ok'),ms))
+
 @connect(
   state => ({
     lang: state.common.lang
@@ -29,11 +32,14 @@ export default class Main extends React.Component <Props, State> {
     this.handleLanguageChange = this.handleLanguageChange.bind(this)
   }
 
-  handleLanguageChange(lang:string){
+  async handleLanguageChange(lang:string){
+    this.props.dispatch({type: Actions.SLEEP})
+    await sleep(2000)
     this.props.dispatch({type: Actions.CHANGE_LANGUADE, payload:lang})
   }
   
-  submitHandler = values => {
+  submitHandler = async values => {
+    await sleep(1500)
     console.log(values)
   }
 
