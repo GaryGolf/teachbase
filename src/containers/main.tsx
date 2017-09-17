@@ -40,7 +40,7 @@ export default class Main extends React.Component <Props, State> {
   
   submitHandler = async values => {
     await sleep(1500)
-    console.log(values)
+    console.log(values) 
   }
 
   render(){
