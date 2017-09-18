@@ -16,7 +16,7 @@ interface State {
   lang: string
 }
 
-const sleep = async ms => new Promise(async resolve=>await setTimeout(()=>resolve('Ok'),ms))
+const sleep = ms => new Promise(resolve=>setTimeout(()=>resolve('Ok'),ms))
 
 @connect(
   state => ({
