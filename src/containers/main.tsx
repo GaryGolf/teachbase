@@ -33,7 +33,7 @@ export default class Main extends React.Component <Props, State> {
   }
 
   async handleLanguageChange(lang:string){
-    this.props.dispatch({type: Actions.SLEEP})
+    await this.props.dispatch({type: Actions.SLEEP})
     await sleep(2000)
     this.props.dispatch({type: Actions.CHANGE_LANGUADE, payload:lang})
   }
